@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ann yang demo</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="container">
+      <div class="header">
+        <h3 class="text-muted">ann yang demo</h3>
+      </div>
+
+      <div class="jumbotron">
+        <h3>Introduce yourself by saying <br> "My name is ____."</h3>
+        <h3 class="hello"></h3>
+        <div class="panel panel-default">
+          <div class="panel-body response-name">
+          </div>
+        </div>
+      </div>
+
+      <div class="jumbotron">
+        <h3>Change the color of the button by saying a color</h3>
+        <ul class="list-group">
+          <li class="list-group-item list-group-item-danger">Red</li>
+          <li class="list-group-item list-group-item-info">Blue</li>
+          <li class="list-group-item list-group-item-success">Green</li>
+          <li class="list-group-item list-group-item-decade">#decade</li>
+        </ul>
+        <button class="btn btn-lg btn-default">Change Me!</button>
+      </div>
+
+      <div class="jumbotron">
+        <h3>
+          Play some music by saying <br>
+          "Play <strong>song</strong> by <strong>artist</strong>."
+        </h3>
+        <div class="status alert alert-warning" role="alert">Could not find that song.</div>
+        <h3 class="now-playing">
+          Now Playing
+          <br>
+          <span class="artist h4"></span>
+          <span class="song h4"></span>
+          <br>
+          <audio src="" preload="auto" autoplay controls></audio>
+        </h3>
+        <div class="panel panel-default">
+          <div class="panel-body response-music">
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p class="lead">Built with Yeoman, bootstrap, annyang, three.js, and the spotify web api</p>
+      </div>
+    </div>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/plugins.js -->
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.2.1/annyang.min.js"></script>
+    <script src="scripts/three.min.js"></script>
+    <script src="scripts/cube.js"></script>
+    <script src="scripts/commands.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
